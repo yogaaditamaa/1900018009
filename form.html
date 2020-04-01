@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulir</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<h1 align="center">FORM PENDAFTARAN AKUN Point Blank</h1>
+	<hr>
+	<form>
+		<div align="left" style="border: 1px solid black">
+			<label><b>Nama</b></label>
+			<input type="text" placeholder="Tulis namamu disini.."/>
+			<br>
+			<label><b>Email</b></label>
+			<input type="text" placeholder="emailmu@gmail.com" />
+			<br>
+			<label><b>No. Telp</b></label>
+			<input type="text" placeholder="08xxxxxxxxxx">
+			<br>
+			<label><b>Username</b></label>
+			<input type="text">
+			<br>
+			<font size="2"><p style="color: #ff443d">Kombinasi huruf dan angka</p></font>
+			<br>
+			<label><b>Password</b></label>
+			<input type="Password">
+			<br>
+			<label><b>Tanggal Lahir</b></label>
+			<input type="date"/>
+			<br>
+			<label><b>Jenis Kelamin</b></label>
+			<br>
+			<input type="radio" name="Kelamin" checked> Laki-Laki
+			<input type="radio" name="Kelamin"> peremupuan
+			<br>
+			<label><b>Agama</b></label>
+			<select>
+				<option>Islam</option>
+				<option>Kristen</option>
+				<option>Katolik</option>
+				<option>Hindu</option>
+				<option>Budha</option>
+			</select>
+			<br>
+			<input type="checkbox" required><b>Saya telah meneyetujuinya</b>
+			<br>
+			<button type="submit">Daftar Sekarang</button>
+			<button type="reset">Hapus</button>
+		</div>		
+		</form>
+	<form>
+		<div class="form-group">
+			<label for="comment">comment:</label>
+			<br>
+			<textarea class="form-control" rows="5" id="comment"></textarea>
+		</div>
+		</form>
+
+	  <div class="dropdown">
+	    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Pilihan
+	    <span class="caret"></span></button>
+	    <ul class="dropdown-menu">
+	      	<li><a href="#">Login</a></li>
+	      	<li><a href="#">Logout</a></li>
+	      	<li class="divider"></li>
+	      	<li><a href="#">About Us</a></li>
+	    </ul>
+	 </div>
+
+</body>
+</html>
