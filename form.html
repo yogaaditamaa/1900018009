@@ -10,35 +10,33 @@
 <body>
 	<h1 align="center">FORM PENDAFTARAN AKUN Point Blank</h1>
 	<hr>
-	<form>
+	<form action="pb.php" method="POST">
 		<div align="left" style="border: 1px solid black">
 			<label><b>Nama</b></label>
-			<input type="text" placeholder="Tulis namamu disini.."/>
+			<input type="text" name="nama" placeholder="Tulis namamu disini.."  required/>
 			<br>
 			<label><b>Email</b></label>
-			<input type="text" placeholder="emailmu@gmail.com" />
+			<input type="email" name="email" placeholder="emailmu@gmail.com" required/>
 			<br>
 			<label><b>No. Telp</b></label>
-			<input type="text" placeholder="08xxxxxxxxxx">
+			<input type="number" name="nomer" placeholder="08xxxxxxxxxx" required/>
 			<br>
 			<label><b>Username</b></label>
-			<input type="text">
-			<br>
-			<font size="2"><p style="color: #ff443d">Kombinasi huruf dan angka</p></font>
+			<input type="text" name="username" required>
 			<br>
 			<label><b>Password</b></label>
-			<input type="Password">
+			<input type="Password" name="Password" required>
 			<br>
 			<label><b>Tanggal Lahir</b></label>
-			<input type="date"/>
+			<input type="date" name="ttl" required/>
 			<br>
 			<label><b>Jenis Kelamin</b></label>
 			<br>
-			<input type="radio" name="Kelamin" checked> Laki-Laki
-			<input type="radio" name="Kelamin"> peremupuan
+			<input type="radio" name="Kelamin" value="Laki-Laki" checked> Laki-Laki
+			<input type="radio" name="Kelamin" value="Peremupuan"> Peremupuan
 			<br>
 			<label><b>Agama</b></label>
-			<select>
+			<select name="Agama">
 				<option>Islam</option>
 				<option>Kristen</option>
 				<option>Katolik</option>
@@ -46,9 +44,9 @@
 				<option>Budha</option>
 			</select>
 			<br>
-			<input type="checkbox" required><b>Saya telah meneyetujuinya</b>
+			<input type="checkbox" required=""><b>Saya telah meneyetujuinya</b>
 			<br>
-			<button type="submit">Daftar Sekarang</button>
+			<button type="submit" action="test_input" >Daftar Sekarang</button>
 			<button type="reset">Hapus</button>
 		</div>		
 		</form>
@@ -70,6 +68,5 @@
 	      	<li><a href="#">About Us</a></li>
 	    </ul>
 	 </div>
-
 </body>
 </html>
