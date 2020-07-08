@@ -1,72 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Formulir</title>
+	<title>Regis</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<h1 align="center">FORM PENDAFTARAN AKUN Point Blank</h1>
-	<hr>
-	<form action="pb.php" method="POST">
-		<div align="left" style="border: 1px solid black">
-			<label><b>Nama</b></label>
-			<input type="text" name="nama" placeholder="Tulis namamu disini.."  required/>
-			<br>
-			<label><b>Email</b></label>
-			<input type="email" name="email" placeholder="emailmu@gmail.com" required/>
-			<br>
-			<label><b>No. Telp</b></label>
-			<input type="number" name="nomer" placeholder="08xxxxxxxxxx" required/>
-			<br>
-			<label><b>Username</b></label>
-			<input type="text" name="username" required>
-			<br>
-			<label><b>Password</b></label>
-			<input type="Password" name="Password" required>
-			<br>
-			<label><b>Tanggal Lahir</b></label>
-			<input type="date" name="ttl" required/>
-			<br>
-			<label><b>Jenis Kelamin</b></label>
-			<br>
-			<input type="radio" name="Kelamin" value="Laki-Laki" checked> Laki-Laki
-			<input type="radio" name="Kelamin" value="Peremupuan"> Peremupuan
-			<br>
-			<label><b>Agama</b></label>
-			<select name="Agama">
-				<option>Islam</option>
-				<option>Kristen</option>
-				<option>Katolik</option>
-				<option>Hindu</option>
-				<option>Budha</option>
-			</select>
-			<br>
-			<input type="checkbox" required=""><b>Saya telah meneyetujuinya</b>
-			<br>
-			<button type="submit" action="test_input" >Daftar Sekarang</button>
-			<button type="reset">Hapus</button>
-		</div>		
-		</form>
-	<form>
-		<div class="form-group">
-			<label for="comment">comment:</label>
-			<br>
-			<textarea class="form-control" rows="5" id="comment"></textarea>
+	<div class="body" style="width: 100%; height: 750px; background-image: url(490346.jpg); background-size: 100%">
+		<div class="container" style="width: 100%; height: 700px;">
+			<h1 align="center">FORM PENDAFTARAN AKUN Point Blank</h1>
+			<hr>
+			<form method="POST" action="pb.php" >
+			
+				<div align="left" style="color: black">
+					<label><b>Nama </b></label>
+					<input type="text" name="inputNama" placeholder="Tulis namamu disini.."  required/>
+					<br>
+					<label><b>Email </b></label>
+					<input type="email" name="mail" placeholder="emailmu@gmail.com" required/>
+					<br>
+					<label><b>No. Telp </b></label>
+					<input type="number" name="nomer" placeholder="08xxxxxxxxxx" required/>
+					<br>
+					<label><b>Username </b></label>
+					<input type="text" name="username" required>
+					<br>
+					<label><b>Password </b></label>
+					<input type="Password" name="Password" required>
+					<br>
+					<label><b>Tanggal Lahir </b></label>
+					<input type="date" name="ttl" required/>
+					<br>
+					<label><b>Jenis Kelamin </b></label>
+					<br>
+					<input type="radio" name="Kelamin" value="Laki-Laki" checked> Laki-Laki
+					<input type="radio" name="Kelamin" value="Peremupuan"> Peremupuan
+					<br>
+					<label><b>Agama</b></label>
+					<select name="Agama">
+						<option>Islam</option>
+						<option>Kristen</option>
+						<option>Katolik</option>
+						<option>Hindu</option>
+						<option>Budha</option>
+					</select>
+					<br>
+					<input type="checkbox" required=""><b>Saya telah meneyetujuinya</b>
+					<br>
+					<button type="submit" >Daftar Sekarang</button>
+					<button type="reset">Hapus</button>
+				</div>		
+			</form>
+				<div class="form-group">
+					<label for="comment">comment:</label>
+					<br>
+					<textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+				</div>
+	  			<div class="dropdown">
+	    			<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">	Pilihan
+	    			<span class="caret"></span></button>
+	    			<ul class="dropdown-menu">
+	      				<li><a href="#">Login</a></li>
+	      				<li><a href="#">Logout</a></li>
+	      				<li class="divider"></li>
+	      				<li><a href="#">About Us</a></li>
+	    			</ul>
+	 			</div>
 		</div>
-		</form>
-
-	  <div class="dropdown">
-	    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Pilihan
-	    <span class="caret"></span></button>
-	    <ul class="dropdown-menu">
-	      	<li><a href="#">Login</a></li>
-	      	<li><a href="#">Logout</a></li>
-	      	<li class="divider"></li>
-	      	<li><a href="#">About Us</a></li>
-	    </ul>
-	 </div>
+		<div class="footer" style="width: 100%; height: 50px; background: maroon; color: white; line-height: 50px; font-style: italic; ">
+			<center>Copyright &copy; 2020 Yoga Aditama</center>
+		</div>
+	</div>
 </body>
 </html>
